@@ -13,14 +13,14 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
-import model.Attandance;
+import model.Attendance;
 import model.Session;
 import model.Student;
 import util.DateTimeHelper;
 
 /**
  *
- * @author Dong
+ * @author sonnt
  */
 public class TakeAttController extends HttpServlet {
 
@@ -38,9 +38,9 @@ public class TakeAttController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        int sesid = Integer.parseInt(request.getParameter("id"));
+        int sesid = Integer.parseInt(request.getParameter("sessionId"));
         AttandanceDBContext attDB = new AttandanceDBContext();
-        ArrayList<Attandance> atts = attDB.getAttsBySessionId(sesid);
+        ArrayList<Attendance> atts = attDB.getAttsBySessionId(sesid);
         request.setAttribute("atts", atts);
         
         SessionDBContext sesDB = new SessionDBContext();
@@ -52,7 +52,7 @@ public class TakeAttController extends HttpServlet {
 //        else if(DateTimeHelper.getDaystoCurrent(ses.getDate())< 0)
 //            response.getWriter().println("this session is not yet started");
 //        else
-        request.getRequestDispatcher("../view/lecturer/takeatt.jsp").forward(request, response);
+        request.getRequestDispatcher("../View/lecturer/takeatt.jsp").forward(request, response);
     }
 
     /**
@@ -71,7 +71,7 @@ public class TakeAttController extends HttpServlet {
         
         String[] stdids = request.getParameterValues("stdid");
         for (String stdid : stdids) {
-            Attandance a = new Attandance();
+            Attendance a = new Attendance();
             Student s = new Student();
             a.setStudent(s);
             a.setSession(ses);

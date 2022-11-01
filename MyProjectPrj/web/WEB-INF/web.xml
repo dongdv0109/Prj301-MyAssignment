@@ -6,7 +6,7 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>TakeAttController</servlet-name>
-        <url-pattern>/takeatt</url-pattern>
+        <url-pattern>/lecturer/takeatt</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

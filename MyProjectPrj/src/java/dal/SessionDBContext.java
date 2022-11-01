@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import model.Attandance;
+import model.Attendance;
 import model.Group;
 import model.Lecturer;
 import model.Room;
@@ -42,7 +42,7 @@ public class SessionDBContext extends DBContext<Session> {
             stm_remove_attandances.executeUpdate();
 
             //add new attandances
-            for (Attandance att : model.getAtts()) {
+            for (Attendance att : model.getAtts()) {
                 String sql_insert_att = "INSERT INTO [Attandance]\n"
                         + "           ([sesid]\n"
                         + "           ,[stdid]\n"

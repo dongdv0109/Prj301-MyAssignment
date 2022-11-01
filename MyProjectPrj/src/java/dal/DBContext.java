@@ -13,15 +13,15 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Dong
+ * @author Ngo Tung Son
  */
 public abstract class DBContext<T> {
     protected Connection connection;
     public DBContext()
     {
         try {
-            String user = "sonnt";
-            String pass = "12345678";
+            String user = "sa";
+            String pass = "123456";
             String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=PRJ301_FALL2022_Assignment";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);

@@ -20,7 +20,7 @@ public class Session {
     private Date date;
     private int index;
     private boolean attanded;
-    private ArrayList<Attandance> atts = new ArrayList<>();
+    private ArrayList<Attendance> atts = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -86,11 +86,11 @@ public class Session {
         this.attanded = attanded;
     }
 
-    public ArrayList<Attandance> getAtts() {
+    public ArrayList<Attendance> getAtts() {
         return atts;
     }
 
-    public void setAtts(ArrayList<Attandance> atts) {
+    public void setAtts(ArrayList<Attendance> atts) {
         this.atts = atts;
     }
     

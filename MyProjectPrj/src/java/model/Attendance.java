@@ -8,7 +8,7 @@ package model;
  *
  * @author Dong
  */
-public class Attandance {
+public class Attendance {
     private Student student;
     private Session session;
     private boolean present;

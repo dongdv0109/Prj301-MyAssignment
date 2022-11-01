@@ -10,7 +10,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import model.Attandance;
+import model.Attendance;
 import model.Session;
 import model.Student;
 
@@ -18,10 +18,10 @@ import model.Student;
  *
  * @author Dong
  */
-public class AttandanceDBContext extends DBContext<Attandance> {
+public class AttandanceDBContext extends DBContext<Attendance> {
 
-    public ArrayList<Attandance> getAttsBySessionId(int sesid) {
-        ArrayList<Attandance> atts = new ArrayList<>();
+    public ArrayList<Attendance> getAttsBySessionId(int sesid) {
+        ArrayList<Attendance> atts = new ArrayList<>();
         try {
             String sql = "SELECT std.stdid,std.stdname\n"
                     + "	,ses.sesid\n"
@@ -37,7 +37,7 @@ public class AttandanceDBContext extends DBContext<Attandance> {
             ResultSet rs = stm.executeQuery();
             while(rs.next())
             {
-                Attandance att = new Attandance();
+                Attendance att = new Attendance();
                 Student s = new Student();
                 att.setStudent(s);
                 Session ses = new Session();
@@ -54,29 +54,29 @@ public class AttandanceDBContext extends DBContext<Attandance> {
         }
         return atts;
     }
-
+  
     @Override
-    public void insert(Attandance model) {
+    public void insert(Attendance model) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void update(Attandance model) {
+    public void update(Attendance model) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public void delete(Attandance model) {
+    public void delete(Attendance model) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public Attandance get(int id) {
+    public Attendance get(int id) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     @Override
-    public ArrayList<Attandance> list() {
+    public ArrayList<Attendance> list() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
