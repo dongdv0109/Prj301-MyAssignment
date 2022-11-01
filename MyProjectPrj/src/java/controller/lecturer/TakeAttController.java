@@ -20,7 +20,7 @@ import util.DateTimeHelper;
 
 /**
  *
- * @author sonnt
+ * @author Dong
  */
 public class TakeAttController extends HttpServlet {
 
