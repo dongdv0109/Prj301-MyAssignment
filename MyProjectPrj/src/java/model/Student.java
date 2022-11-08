@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Ngo Tung Son
+ * @author Dong
  */
 public class Student {
     private int id;

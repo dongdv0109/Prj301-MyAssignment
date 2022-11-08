@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Ngo Tung Son
+ * @author Dong
  */
 public class Session {
     private int id;

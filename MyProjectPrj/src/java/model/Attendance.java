@@ -6,7 +6,7 @@ package model;
 
 /**
  *
- * @author Ngo Tung Son
+ * @author Dong
  */
 public class Attendance {
     private int id;

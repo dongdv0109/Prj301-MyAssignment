@@ -14,7 +14,7 @@ import model.Lecturer;
 
 /**
  *
- * @author Ngo Tung Son
+ * @author Dong
  */
 public class LecturerDBContext extends dal.DBContext<Lecturer> {
 

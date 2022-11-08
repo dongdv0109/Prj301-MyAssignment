@@ -1,7 +1,7 @@
 <%-- 
     Document   : timetable
     Created on : Oct 15, 2022, 9:30:31 AM
-    Author     : Ngo Tung Son
+    Author     : Dong
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

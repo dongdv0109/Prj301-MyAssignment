@@ -23,7 +23,7 @@ import util.DateTimeHelper;
 
 /**
  *
- * @author Hello Ngo Tung Son handsome
+ * @author Dong
  */
 public class Time_TableController extends HttpServlet {
    
