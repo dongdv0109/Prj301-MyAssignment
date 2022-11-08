@@ -4,21 +4,17 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author Dong
+ * @author Ngo Tung Son
  */
 public class Student {
     private int id;
-    private  String name;
-
-    public Student() {
-    }
-
-    public Student(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+    private String name;
+    private ArrayList<Group> groups = new ArrayList<>();
+    private ArrayList<Attendance> attandances = new ArrayList<>();
 
     public int getId() {
         return id;
@@ -35,6 +31,21 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
-    
+
+    public ArrayList<Group> getGroups() {
+        return groups;
+    }
+
+    public void setGroups(ArrayList<Group> groups) {
+        this.groups = groups;
+    }
+
+    public ArrayList<Attendance> getAttandances() {
+        return attandances;
+    }
+
+    public void setAttandances(ArrayList<Attendance> attandances) {
+        this.attandances = attandances;
+    }
     
 }

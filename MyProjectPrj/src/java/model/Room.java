@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dong
+ * @author Ngo Tung Son
  */
 public class Room {
     private int id;
@@ -40,4 +40,3 @@ public class Room {
     }
     
 }
-

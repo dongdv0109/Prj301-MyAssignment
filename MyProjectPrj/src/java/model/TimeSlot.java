@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Dong
+ * @author Ngo Tung Son
  */
 public class TimeSlot {
     private int id;
